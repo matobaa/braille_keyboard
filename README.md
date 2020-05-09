@@ -1,10 +1,12 @@
-# tact31_keyboard
+# braille_Keyboard
 
-<a href="tact31_keyboard.jpg"><img src="tact31_keyboard.jpg" width=25% align="right"></a>
+<a href="doc/braille_keyboard.jpg"><img src="doc/braille_keyboard.jpg" align="right"></a>
 
-A 30% keyboard with tactile switches
+Braille Keyboard は、点字を入力できるキーボードです。
 
-Tact31 Keyboard は、タクトスイッチを用いた30%キーボードです。[Nomu30](https://keys.recompile.net/projects/nomu30/)というキーボードにインスパイアされました。ファームウエアに[QMK](https://qmk.fm/)を利用しています。
+- [Key Layout](http://www.keyboard-layout-editor.com/##@@_a:7&f:5%3B&=S&=D&_x:2&g:true&w:1.25&h:2%3B&=&_x:2&g:false&f:5%3B&=K&=L%3B&@_y:-0.5&x:2&n:true%3B&=F&_c=%23bbbbbb&f:2%3B&=G&_x:1.25%3B&=H&_c=%23cccccc&f:5&n:true%3B&=J)
+- [User Manual](doc/UserManual.md)
+- [Build Guide](doc/BuildGuide.md)
 
-- [キーマップ](http://www.keyboard-layout-editor.com/#/gists/11d8e3943e98f012d6dd6bc9da6640ee)
-- [Build Guide](doc/build.md)
+- [firmware](firmware)
+- [PCB](pcbdesign)
