@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name Keebio)(type KiCad)(uri ${KIPRJMOD}/Keebio-Parts.pretty)(options "")(descr ""))
+  (lib (name kbd)(type KiCad)(uri ${KIPRJMOD}/kbd/kbd.pretty)(options "")(descr ""))
+  (lib (name library)(type KiCad)(uri ${KIPRJMOD}/library)(options "")(descr ""))
+)
