@@ -45,38 +45,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 void matrix_init_user(void) {
-  set_unicode_input_mode(UC_WINC);
+    set_unicode_input_mode(UC_WINC);
 }
 
-bool is_combo_active = false;
 uint16_t combo_timer = 0;
-uint8_t combo_pressed_flags = 0;
+uint8_t combo_pressed_flags = 0b000000;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  if ( KC_1 <= keycode && keycode <= KC_6 && record->event.pressed) {
-    if (!is_combo_active) {
-      is_combo_active = true;
-      combo_timer = timer_read();
+    if ( KC_1 <= keycode && keycode <= KC_6 && record->event.pressed) {
+	if (!combo_pressed_flags) {  // combo start
+	    combo_timer = timer_read();
+	}
+	combo_pressed_flags |= 1 << (keycode - KC_1);
+	uprintf("flags: %6b\n", combo_pressed_flags);
+	return false; // Skip all further processing of this key
     }
-    combo_pressed_flags |= 1 << (keycode - KC_1);
-#ifdef CONSOLE_ENABLE
-    uprintf("KL: kc: %u, col: %u, row: %u, pressed: %u\n",
-      keycode, record->event.key.col, record->event.key.row, record->event.pressed);
-    uprintf("flags: %6b\n", combo_pressed_flags);
-#endif
-    return false; // Skip all further processing of this key
-  }
-  return true; // Process all other keycodes normally
+    return true; // Process all other keycodes normally
 }
 
 void matrix_scan_user(void) {
-  if (is_combo_active && timer_elapsed(combo_timer) > TAPPING_TERM) {
-    is_combo_active = false;
-    char s[5] = "2800\0";
-    s[2] = '0'+((combo_pressed_flags & 0xf0) >> 4);
-    s[3] = "0123456789abcdef"[combo_pressed_flags & 0x0f];
-    uprintf("%s\n",s);
-    send_unicode_hex_string(s);
-    combo_pressed_flags = 0;
-  }
+    if (combo_pressed_flags && timer_elapsed(combo_timer) > TAPPING_TERM) {
+	char s[5] = "2800\0";
+	s[2] = "0123456789abcdef"[combo_pressed_flags >> 4 & 0x0f];
+	s[3] = "0123456789abcdef"[combo_pressed_flags & 0x0f];
+	uprintf("%s\n",s);
+	send_unicode_hex_string(s);
+	combo_pressed_flags = 0;
+    }
 }
