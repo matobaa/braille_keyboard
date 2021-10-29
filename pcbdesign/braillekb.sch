@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Braille Keyboard"
-Date "2021-10-26"
-Rev "2"
+Date "2021-10-28"
+Rev "2-simplified"
 Comp "matobaa@gmail.com"
 Comment1 "Licence: CC-BY-SA-2.0"
 Comment2 ""
@@ -46,232 +46,6 @@ F 3 "~" H 2600 1750 50  0001 C CNN
 	1    2600 1550
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 1800 1800 1550
-Wire Wire Line
-	2400 1800 2400 1550
-$Comp
-L Device:D_x2_KCom_AAK DD11
-U 1 1 6179DA44
-P 2100 1800
-F 0 "DD11" H 2100 1950 50  0000 C CNN
-F 1 "D_KCom" H 2100 1925 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 2100 1800 50  0001 C CNN
-F 3 "~" H 2100 1800 50  0001 C CNN
-	1    2100 1800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW13
-U 1 1 617AD329
-P 3600 1550
-F 0 "SW13" H 3600 1450 50  0000 C CNN
-F 1 "SW_Push" H 3600 1744 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 3600 1750 50  0001 C CNN
-F 3 "~" H 3600 1750 50  0001 C CNN
-	1    3600 1550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW14
-U 1 1 617AD333
-P 4600 1550
-F 0 "SW14" H 4600 1450 50  0000 C CNN
-F 1 "SW_Push" H 4600 1744 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 4600 1750 50  0001 C CNN
-F 3 "~" H 4600 1750 50  0001 C CNN
-	1    4600 1550
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 1800 3800 1550
-Wire Wire Line
-	4400 1800 4400 1550
-$Comp
-L Device:D_x2_KCom_AAK DD13
-U 1 1 617AD374
-P 4100 1800
-F 0 "DD13" H 4100 1950 50  0000 C CNN
-F 1 "D_KCom" H 4100 1925 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 4100 1800 50  0001 C CNN
-F 3 "~" H 4100 1800 50  0001 C CNN
-	1    4100 1800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW22
-U 1 1 617C2E7C
-P 2600 2950
-F 0 "SW22" H 2600 2850 50  0000 C CNN
-F 1 "SW_Push" H 2600 3144 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 2600 3150 50  0001 C CNN
-F 3 "~" H 2600 3150 50  0001 C CNN
-	1    2600 2950
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 3200 1800 2950
-Wire Wire Line
-	2400 3200 2400 2950
-$Comp
-L Device:D_x2_KCom_AAK DD21
-U 1 1 617C2EBC
-P 2100 3200
-F 0 "DD21" H 2100 3350 50  0000 C CNN
-F 1 "D_KCom" H 2100 3325 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 2100 3200 50  0001 C CNN
-F 3 "~" H 2100 3200 50  0001 C CNN
-	1    2100 3200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW23
-U 1 1 617C2EC6
-P 3600 2950
-F 0 "SW23" H 3600 2850 50  0000 C CNN
-F 1 "SW_Push" H 3600 3144 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 3600 3150 50  0001 C CNN
-F 3 "~" H 3600 3150 50  0001 C CNN
-	1    3600 2950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW24
-U 1 1 617C2ED0
-P 4600 2950
-F 0 "SW24" H 4600 2850 50  0000 C CNN
-F 1 "SW_Push" H 4600 3144 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 4600 3150 50  0001 C CNN
-F 3 "~" H 4600 3150 50  0001 C CNN
-	1    4600 2950
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 3200 3800 2950
-Wire Wire Line
-	4400 3200 4400 2950
-$Comp
-L Device:D_x2_KCom_AAK DD23
-U 1 1 617C2F10
-P 4100 3200
-F 0 "DD23" H 4100 3350 50  0000 C CNN
-F 1 "D_KCom" H 4100 3325 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 4100 3200 50  0001 C CNN
-F 3 "~" H 4100 3200 50  0001 C CNN
-	1    4100 3200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW31
-U 1 1 617D983E
-P 1600 4350
-F 0 "SW31" H 1600 4250 50  0000 C CNN
-F 1 "SW_Push" H 1600 4544 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 1600 4550 50  0001 C CNN
-F 3 "~" H 1600 4550 50  0001 C CNN
-	1    1600 4350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW32
-U 1 1 617D9848
-P 2600 4350
-F 0 "SW32" H 2600 4250 50  0000 C CNN
-F 1 "SW_Push" H 2600 4544 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 2600 4550 50  0001 C CNN
-F 3 "~" H 2600 4550 50  0001 C CNN
-	1    2600 4350
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 4600 1800 4350
-Wire Wire Line
-	2400 4600 2400 4350
-$Comp
-L Device:D_x2_KCom_AAK DD31
-U 1 1 617D9888
-P 2100 4600
-F 0 "DD31" H 2100 4750 50  0000 C CNN
-F 1 "D_KCom" H 2100 4725 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 2100 4600 50  0001 C CNN
-F 3 "~" H 2100 4600 50  0001 C CNN
-	1    2100 4600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW33
-U 1 1 617D9892
-P 3600 4350
-F 0 "SW33" H 3600 4250 50  0000 C CNN
-F 1 "SW_Push" H 3600 4544 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 3600 4550 50  0001 C CNN
-F 3 "~" H 3600 4550 50  0001 C CNN
-	1    3600 4350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW34
-U 1 1 617D989C
-P 4600 4350
-F 0 "SW34" H 4600 4250 50  0000 C CNN
-F 1 "SW_Push" H 4600 4544 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 4600 4550 50  0001 C CNN
-F 3 "~" H 4600 4550 50  0001 C CNN
-	1    4600 4350
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 4600 3800 4350
-Wire Wire Line
-	4400 4600 4400 4350
-$Comp
-L Device:D_x2_KCom_AAK DD33
-U 1 1 617D98DC
-P 4100 4600
-F 0 "DD33" H 4100 4750 50  0000 C CNN
-F 1 "D_KCom" H 4100 4725 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 4100 4600 50  0001 C CNN
-F 3 "~" H 4100 4600 50  0001 C CNN
-	1    4100 4600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW45
-U 1 1 617F82D8
-P 6950 1550
-F 0 "SW45" H 6950 1450 50  0000 C CNN
-F 1 "SW_Push" H 6950 1744 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 6950 1750 50  0001 C CNN
-F 3 "~" H 6950 1750 50  0001 C CNN
-	1    6950 1550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW46
-U 1 1 617F82E2
-P 7950 1550
-F 0 "SW46" H 7950 1450 50  0000 C CNN
-F 1 "SW_Push" H 7950 1744 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 7950 1750 50  0001 C CNN
-F 3 "~" H 7950 1750 50  0001 C CNN
-	1    7950 1550
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 1800 7150 1550
-Wire Wire Line
-	7750 1800 7750 1550
-$Comp
-L Device:D_x2_KCom_AAK DD45
-U 1 1 617F8322
-P 7450 1800
-F 0 "DD45" H 7450 1950 50  0000 C CNN
-F 1 "D_KCom" H 7450 1925 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 7450 1800 50  0001 C CNN
-F 3 "~" H 7450 1800 50  0001 C CNN
-	1    7450 1800
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push SW47
 U 1 1 617F832C
@@ -292,21 +66,6 @@ F 1 "SW_Push" H 9950 1744 50  0001 C CNN
 F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 9950 1750 50  0001 C CNN
 F 3 "~" H 9950 1750 50  0001 C CNN
 	1    9950 1550
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 1800 9150 1550
-Wire Wire Line
-	9750 1800 9750 1550
-$Comp
-L Device:D_x2_KCom_AAK DD47
-U 1 1 617F8376
-P 9450 1800
-F 0 "DD47" H 9450 1950 50  0000 C CNN
-F 1 "D_KCom" H 9450 1925 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 9450 1800 50  0001 C CNN
-F 3 "~" H 9450 1800 50  0001 C CNN
-	1    9450 1800
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -331,192 +90,14 @@ F 3 "~" H 7950 3150 50  0001 C CNN
 	1    7950 2950
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push SW57
-U 1 1 617F83D4
-P 8950 2950
-F 0 "SW57" H 8950 2850 50  0000 C CNN
-F 1 "SW_Push" H 8950 3144 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 8950 3150 50  0001 C CNN
-F 3 "~" H 8950 3150 50  0001 C CNN
-	1    8950 2950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW58
-U 1 1 617F83DE
-P 9950 2950
-F 0 "SW58" H 9950 2850 50  0000 C CNN
-F 1 "SW_Push" H 9950 3144 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 9950 3150 50  0001 C CNN
-F 3 "~" H 9950 3150 50  0001 C CNN
-	1    9950 2950
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 3200 9150 2950
-Wire Wire Line
-	9750 3200 9750 2950
-$Comp
-L Device:D_x2_KCom_AAK DD57
-U 1 1 617F841E
-P 9450 3200
-F 0 "DD57" H 9450 3350 50  0000 C CNN
-F 1 "D_KCom" H 9450 3325 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 9450 3200 50  0001 C CNN
-F 3 "~" H 9450 3200 50  0001 C CNN
-	1    9450 3200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW65
-U 1 1 617F8428
-P 6950 4350
-F 0 "SW65" H 6950 4250 50  0000 C CNN
-F 1 "SW_Push" H 6950 4544 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 6950 4550 50  0001 C CNN
-F 3 "~" H 6950 4550 50  0001 C CNN
-	1    6950 4350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW66
-U 1 1 617F8432
-P 7950 4350
-F 0 "SW66" H 7950 4250 50  0000 C CNN
-F 1 "SW_Push" H 7950 4544 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 7950 4550 50  0001 C CNN
-F 3 "~" H 7950 4550 50  0001 C CNN
-	1    7950 4350
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 4600 7150 4350
-Wire Wire Line
-	7750 4600 7750 4350
-$Comp
-L Device:D_x2_KCom_AAK DD65
-U 1 1 617F8472
-P 7450 4600
-F 0 "DD65" H 7450 4750 50  0000 C CNN
-F 1 "D_KCom" H 7450 4725 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 7450 4600 50  0001 C CNN
-F 3 "~" H 7450 4600 50  0001 C CNN
-	1    7450 4600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW67
-U 1 1 617F847C
-P 8950 4350
-F 0 "SW67" H 8950 4250 50  0000 C CNN
-F 1 "SW_Push" H 8950 4544 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 8950 4550 50  0001 C CNN
-F 3 "~" H 8950 4550 50  0001 C CNN
-	1    8950 4350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW68
-U 1 1 617F8486
-P 9950 4350
-F 0 "SW68" H 9950 4250 50  0000 C CNN
-F 1 "SW_Push" H 9950 4544 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 9950 4550 50  0001 C CNN
-F 3 "~" H 9950 4550 50  0001 C CNN
-	1    9950 4350
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 4600 9150 4350
-Wire Wire Line
-	9750 4600 9750 4350
-$Comp
-L Device:D_x2_KCom_AAK DD67
-U 1 1 617F84C6
-P 9450 4600
-F 0 "DD67" H 9450 4750 50  0000 C CNN
-F 1 "D_KCom" H 9450 4725 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 9450 4600 50  0001 C CNN
-F 3 "~" H 9450 4600 50  0001 C CNN
-	1    9450 4600
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	1400 1550 1400 1250
 Wire Wire Line
-	2800 4350 2800 2950
-Wire Wire Line
 	2800 1550 2800 1250
 Wire Wire Line
-	3400 4350 3400 2950
-Connection ~ 3400 1550
-Wire Wire Line
-	3400 1550 3400 1250
-Connection ~ 3400 2950
-Wire Wire Line
-	3400 2950 3400 1550
-Wire Wire Line
-	4800 4350 4800 2950
-Connection ~ 4800 1550
-Wire Wire Line
-	4800 1550 4800 1250
-Connection ~ 4800 2950
-Wire Wire Line
-	6750 4350 6750 2950
-Connection ~ 6750 1550
-Wire Wire Line
-	6750 1550 6750 1250
-Connection ~ 6750 2950
-Wire Wire Line
-	6750 2950 6750 1550
-Wire Wire Line
-	8150 4350 8150 2950
-Connection ~ 8150 1550
-Wire Wire Line
-	8150 1550 8150 1250
-Connection ~ 8150 2950
-Wire Wire Line
-	8150 2950 8150 1550
-Wire Wire Line
-	8750 4350 8750 2950
-Connection ~ 8750 1550
-Wire Wire Line
 	8750 1550 8750 1250
-Connection ~ 8750 2950
-Wire Wire Line
-	8750 2950 8750 1550
-Wire Wire Line
-	10150 4350 10150 2950
-Connection ~ 10150 1550
 Wire Wire Line
 	10150 1550 10150 1250
-Connection ~ 10150 2950
-Wire Wire Line
-	10150 2950 10150 1550
-Wire Wire Line
-	4800 2950 4800 1550
-Wire Wire Line
-	2100 2450 4100 2450
-Connection ~ 4100 2450
-Wire Wire Line
-	4100 2450 5150 2450
-Wire Wire Line
-	4100 3850 5150 3850
-Wire Wire Line
-	6400 3850 7450 3850
-Wire Wire Line
-	6400 2450 7450 2450
-Wire Wire Line
-	2100 3850 4100 3850
-Connection ~ 4100 3850
-Wire Wire Line
-	4100 5250 5150 5250
-Wire Wire Line
-	6400 5250 7450 5250
-Wire Wire Line
-	2100 5250 4100 5250
-Connection ~ 4100 5250
 Text GLabel 1400 1250 1    50   Input ~ 0
 C1
 Text GLabel 2800 1250 1    50   Input ~ 0
@@ -533,27 +114,10 @@ Text GLabel 8750 1250 1    50   Input ~ 0
 C7
 Text GLabel 10150 1250 1    50   Input ~ 0
 C8
-Wire Wire Line
-	9450 2450 7450 2450
-Connection ~ 7450 2450
-Wire Wire Line
-	9450 3850 7450 3850
-Connection ~ 7450 3850
-Wire Wire Line
-	9450 5250 7450 5250
-Connection ~ 7450 5250
 Text GLabel 5150 2450 2    50   Input ~ 0
 R1
-Text GLabel 5150 3850 2    50   Input ~ 0
-R2
-Text GLabel 5150 5250 2    50   Input ~ 0
-R3
 Text GLabel 6400 2450 0    50   Input ~ 0
 R4
-Text GLabel 6400 3850 0    50   Input ~ 0
-R5
-Text GLabel 6400 5250 0    50   Input ~ 0
-R6
 Text GLabel 3950 6500 0    50   Input ~ 0
 C1
 Text GLabel 3950 6600 0    50   Input ~ 0
@@ -564,10 +128,6 @@ Text GLabel 3950 6800 0    50   Input ~ 0
 C4
 Text GLabel 3950 7000 0    50   Input ~ 0
 R1
-Text GLabel 3950 7200 0    50   Input ~ 0
-R2
-Text GLabel 3950 7100 0    50   Input ~ 0
-R3
 Text GLabel 5350 6800 2    50   Input ~ 0
 C5
 Text GLabel 5350 6700 2    50   Input ~ 0
@@ -578,34 +138,12 @@ Text GLabel 5350 6500 2    50   Input ~ 0
 C8
 Text GLabel 5350 7000 2    50   Input ~ 0
 R4
-Text GLabel 5350 7200 2    50   Input ~ 0
-R5
-Text GLabel 5350 7100 2    50   Input ~ 0
-R6
 NoConn ~ 3950 6100
 NoConn ~ 3950 6200
 NoConn ~ 3950 6900
 NoConn ~ 5350 6100
 NoConn ~ 5350 6300
-NoConn ~ 5350 6400
 NoConn ~ 5350 6900
-Wire Wire Line
-	1400 4350 1400 2950
-$Comp
-L Switch:SW_Push SW21
-U 1 1 617C2E72
-P 1600 2950
-F 0 "SW21" H 1600 2850 50  0000 C CNN
-F 1 "SW_Push" H 1600 3144 50  0001 C CNN
-F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 1600 3150 50  0001 C CNN
-F 3 "~" H 1600 3150 50  0001 C CNN
-	1    1600 2950
-	-1   0    0    -1  
-$EndComp
-Connection ~ 2800 2950
-Connection ~ 2800 1550
-Wire Wire Line
-	2800 2950 2800 1550
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 61EF2E32
@@ -714,47 +252,100 @@ Wire Wire Line
 Connection ~ 3600 6400
 Wire Wire Line
 	5650 6200 5350 6200
-Connection ~ 1400 1550
-Connection ~ 1400 2950
-Wire Wire Line
-	1400 2950 1400 1550
-Wire Wire Line
-	2100 2000 2100 2450
-Wire Wire Line
-	4100 2000 4100 2450
-Wire Wire Line
-	4100 3400 4100 3850
-Wire Wire Line
-	2100 3400 2100 3850
-Wire Wire Line
-	2100 4800 2100 5250
-Wire Wire Line
-	4100 4800 4100 5250
-Wire Wire Line
-	7450 2000 7450 2450
-Wire Wire Line
-	9450 2000 9450 2450
-Wire Wire Line
-	9450 3400 9450 3850
-Wire Wire Line
-	7150 3200 7150 2950
-Wire Wire Line
-	7750 3200 7750 2950
 $Comp
-L Device:D_x2_KCom_AAK DD55
-U 1 1 617F83CA
-P 7450 3200
-F 0 "DD55" H 7450 3350 50  0000 C CNN
-F 1 "D_KCom" H 7450 3325 50  0001 C CNN
-F 2 "local:SOT-23_dual_bridged" H 7450 3200 50  0001 C CNN
-F 3 "~" H 7450 3200 50  0001 C CNN
-	1    7450 3200
+L Switch:SW_Push SW24
+U 1 1 617C2ED0
+P 4600 2950
+F 0 "SW24" H 4600 2850 50  0000 C CNN
+F 1 "SW_Push" H 4600 3144 50  0001 C CNN
+F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 4600 3150 50  0001 C CNN
+F 3 "~" H 4600 3150 50  0001 C CNN
+	1    4600 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW23
+U 1 1 617C2EC6
+P 3600 2950
+F 0 "SW23" H 3600 2850 50  0000 C CNN
+F 1 "SW_Push" H 3600 3144 50  0001 C CNN
+F 2 "Keebio:MX-Alps-Choc-1U-NoLED" H 3600 3150 50  0001 C CNN
+F 3 "~" H 3600 3150 50  0001 C CNN
+	1    3600 2950
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7450 3400 7450 3850
+	3400 1250 3400 2950
 Wire Wire Line
-	7450 4800 7450 5250
+	4800 1250 4800 2950
 Wire Wire Line
-	9450 4800 9450 5250
+	6750 1250 6750 2950
+Wire Wire Line
+	8150 1250 8150 2950
+Wire Wire Line
+	6400 2450 7150 2450
+Wire Wire Line
+	1800 1550 1800 2450
+Wire Wire Line
+	1800 2450 2400 2450
+Wire Wire Line
+	2400 1550 2400 2450
+Connection ~ 2400 2450
+Wire Wire Line
+	2400 2450 3800 2450
+Wire Wire Line
+	3800 2450 3800 2950
+Connection ~ 3800 2450
+Wire Wire Line
+	3800 2450 4400 2450
+Wire Wire Line
+	4400 2450 4400 2950
+Connection ~ 4400 2450
+Wire Wire Line
+	4400 2450 5150 2450
+Wire Wire Line
+	7150 2450 7150 2950
+Connection ~ 7150 2450
+Wire Wire Line
+	7150 2450 7750 2450
+Wire Wire Line
+	7750 2450 7750 2950
+Connection ~ 7750 2450
+Wire Wire Line
+	7750 2450 9150 2450
+Wire Wire Line
+	9150 1550 9150 2450
+Connection ~ 9150 2450
+Wire Wire Line
+	9750 1550 9750 2450
+Wire Wire Line
+	9150 2450 9750 2450
+NoConn ~ 5350 7100
+NoConn ~ 5350 7200
+NoConn ~ 5350 6400
+NoConn ~ 3950 7100
+NoConn ~ 3950 7200
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 617B9BB0
+P 5650 6200
+F 0 "#FLG0101" H 5650 6275 50  0001 C CNN
+F 1 "PWR_FLAG" H 5650 6373 50  0000 C CNN
+F 2 "" H 5650 6200 50  0001 C CNN
+F 3 "~" H 5650 6200 50  0001 C CNN
+	1    5650 6200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 6200
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 617D47E8
+P 2450 7100
+F 0 "H8" H 2550 7146 50  0000 L CNN
+F 1 "MountingHole" H 2550 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2450 7100 50  0001 C CNN
+F 3 "~" H 2450 7100 50  0001 C CNN
+	1    2450 7100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
