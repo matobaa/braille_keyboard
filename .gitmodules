@@ -1,12 +1,12 @@
 [submodule "firmware/qmk_firmware"]
 	path = firmware/qmk_firmware
 	url = https://github.com/qmk/qmk_firmware.git
-[submodule "pcbdesign/kbd"]
-	path = pcbdesign/kbd
-	url = https://github.com/foostan/kbd.git
-[submodule "pcbdesign/Keebio-Parts.pretty"]
-	path = pcbdesign/Keebio-Parts.pretty
-	url = https://github.com/keebio/Keebio-Parts.pretty.git
 [submodule "pcbdesign/usagi.kicad"]
 	path = pcbdesign/usagi.kicad
 	url = https://github.com/usagi/usagi.kicad
+[submodule "pcbdesign/keebio-components"]
+	path = pcbdesign/keebio-components
+	url = https://github.com/keebio/keebio-components
+[submodule "pcbdesign/perigoso"]
+	path = pcbdesign/perigoso
+	url = https://github.com/perigoso/keyswitch-kicad-library.git
