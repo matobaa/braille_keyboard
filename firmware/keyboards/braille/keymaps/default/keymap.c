@@ -1,4 +1,4 @@
-/* Copyright 2020 MATOBA Akihiro
+/* Copyright 2020,2021 MATOBA Akihiro
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -71,5 +71,47 @@ void matrix_scan_user(void) {
 	uprintf("%s\n",s);
 	send_unicode_hex_string(s);
 	combo_pressed_flags = 0;
+    }
+}
+
+#define DEBOUNCE 5
+
+void bootmagic_lite(void) {
+    matrix_scan();
+    wait_ms(DEBOUNCE * 2);
+    matrix_scan();
+
+    int row0 = matrix_get_row(0);
+    // int row1 = matrix_get_row(1);
+    int row2 = matrix_get_row(2);
+    int row3 = matrix_get_row(3);
+     
+    // row3+col5(K105) is pressed, enter bootmagic
+    if (!(row3 & (1 << 5)))
+        return;
+
+    // ported from old adda5d77707 firmware\qmk_firmware\tmk_core\common\bootmagic.c
+    /* default layer */
+    uint8_t default_layer = 0;
+        if(row0 & (1 << 1)) {  // row0+col1(K001) is pressed, set default layer as 0
+        default_layer |= (1 << 0);
+    }   
+    if(row0 & (1 << 2)) {  // row1+col2(K102) is pressed, set default layer as 1
+        default_layer |= (1 << 1);
+    }
+    if(row0 & (1 << 0)) {  // row0+col0(K000) is pressed, set default layer as 2
+        default_layer |= (1 << 2);
+    }
+    if (default_layer) {
+        eeconfig_update_default_layer(default_layer);
+        default_layer_set((layer_state_t)default_layer);
+    } else {
+        default_layer = eeconfig_read_default_layer();
+        default_layer_set((layer_state_t)default_layer);
+    }
+
+    // Jump to bootloader.
+    if(row2 & (1 << 7)) {  // row2+col7(K007) is pressed, Jump to bootloader
+      bootloader_jump();
     }
 }
